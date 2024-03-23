@@ -27,19 +27,17 @@ Entrada: Número inteiro (ex.: 7); Saída: !7= * 6*5*4*3*2*1-5040.-->
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
     $num = $_POST['num'];
+    $respo = 1;
 
     if(strlen($num) == 0){
         echo "Insira um valor por favor!!";
     }
 
-    for($i=$num; $i>0; $i){
-
-        $res = $num * $i;
-
-        echo "!".$num."=".$i."ou seja !".$num."=".$res;
-        echo "<br>";
-
+    for($i=1; $i <= $num; $i++){
+        $respo *= $i;
     }
+
+        echo "O fatorial do número ".$num. "=" .$respo;
 
 }
 
