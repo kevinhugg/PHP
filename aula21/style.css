@@ -1,0 +1,13 @@
+table{
+    width: 100%;
+    border-collapse: collapse;
+};
+
+td,hd{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+td{
+    background:black;
+}
